@@ -69,7 +69,7 @@ class _ListDataState extends State<ListData> {
               ),
             );
           },
-          child: const Text('Tambah Data Pekerjaan'),
+          child: const Text('Tambah Task Baru'),
         ),
         Expanded(
           child: ListView.builder(

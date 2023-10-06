@@ -39,15 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               textAlign: TextAlign.center,
             ),
-            Text(
-              "©Universitas Jenderal Soedirman",
-              style: TextStyle(
-                fontSize: 14.0,
-                color: Colors.black,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
+            ],
         ),
       ),
     );

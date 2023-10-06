@@ -42,7 +42,7 @@ class _TambahDataState extends State<TambahData> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tambah Data Mahasiswa'),
+        title: const Text('Tambah Task'),
       ),
       drawer: const SideMenu(),
       body: Container(

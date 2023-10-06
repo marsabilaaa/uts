@@ -19,13 +19,18 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _showInput(controller, placeholder, isPassword) {
-    return TextField(
-      controller: controller,
-      obscureText: isPassword,
-      decoration: InputDecoration(
-        hintText: placeholder,
-        border: OutlineInputBorder(),
-        labelText: placeholder,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: TextField(
+        controller: controller,
+        obscureText: isPassword,
+        decoration: InputDecoration(
+          hintText: placeholder,
+          labelText: placeholder,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+        ),
       ),
     );
   }
@@ -58,19 +63,37 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Daily Task App'),
       ),
       body: Container(
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'Selamat datang di Daily Task App',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 20),
             _showInput(_usernameController, 'Masukkan username', false),
-            const SizedBox(height: 16), // Menambahkan jarak vertikal
             _showInput(_passwordController, 'Masukkan password', true),
-            const SizedBox(height: 20), // Menambahkan jarak vertikal
+            const SizedBox(height: 20),
             ElevatedButton(
-              child: const Text('Login'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+              child: const Text(
+                'Login',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
               onPressed: () {
                 if (_usernameController.text == 'admin' &&
                     _passwordController.text == 'admin') {
