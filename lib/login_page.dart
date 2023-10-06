@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                 if (_usernameController.text == 'admin' &&
                     _passwordController.text == 'admin') {
                   _saveUsername();
-                  _showDialog('Anda berhasil login', HomePage());
+                  _showDialog('login berhasil', HomePage());
                 } else {
                   _showDialog('Username dan password salah', LoginPage());
                 }

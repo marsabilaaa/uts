@@ -56,7 +56,7 @@ class _ListDataState extends State<ListData> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('List Data Pekerjaan'),
+        title: const Text('List Task'),
       ),
       drawer: const SideMenu(),
       body: Column(children: <Widget>[
@@ -156,7 +156,7 @@ class _ListDataState extends State<ListData> {
       builder: (context) {
         return AlertDialog(
           titlePadding: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-          title: const Center(child: Text('Detail Pekerjaan')),
+          title: const Center(child: Text('Detail Task')),
           content: SizedBox(
             height: 50,
             child: Column(

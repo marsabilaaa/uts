@@ -52,7 +52,7 @@ class _EditDataState extends State<EditData> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Edit Data Pekerjaan'),
+        title: const Text('Edit Task'),
       ),
       body: Container(
         padding: const EdgeInsets.all(20),

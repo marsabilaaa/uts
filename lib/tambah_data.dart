@@ -63,7 +63,7 @@ class _TambahDataState extends State<TambahData> {
               ),
             ),
             ElevatedButton(
-              child: const Text('Tambah Pekerjaan'),
+              child: const Text('Tambah task'),
               onPressed: () {
                 String nama = namaController.text;
                 String status = statusController.text;
